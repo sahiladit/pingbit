@@ -2,6 +2,7 @@ import { Routes, Route, Link, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Post from "./pages/Post";
 import { Analytics } from "@vercel/analytics/react";
+import About from './pages/About';
 
 export default function App() {
   return (
@@ -10,13 +11,14 @@ export default function App() {
         <Link to="/" className="text-3xl font-bold text-green-400 tracking-tight">pingbit</Link>
         <nav className="space-x-4">
           <Link to="/" className="hover:text-green-400 transition">Home</Link>
-          <a href="#" className="hover:text-green-400 transition">About</a>
+          <Link to="/about" className="hover:text-green-400 transition">About</Link>
         </nav>
       </header>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/post/:id" element={<Post />} />
+        <Route path="/about" element={<About />} /> 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
 
