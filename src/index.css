@@ -1,0 +1,7 @@
+
+@tailwind utilities;
+
+body {
+  background:  bg-dark text-gray-200 font-mono;
+}
+
