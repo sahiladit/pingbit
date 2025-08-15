@@ -1,5 +1,6 @@
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
+import { Analytics } from "@vercel/analytics/react"; // ✅ Correct import
 import Post from "./pages/Post";
 
 export default function App() {
@@ -17,6 +18,9 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/post/:id" element={<Post />} />
       </Routes>
+
+      {/* Analytics will now work */}
+      <Analytics />
 
       <footer className="mt-12 border-t border-gray-800 pt-4 text-center text-gray-500 text-sm">
         © {new Date().getFullYear()} pingbit — Tech blogs for curious minds.

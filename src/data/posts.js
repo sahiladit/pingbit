@@ -8,12 +8,11 @@ export const posts = [
     image: "https://via.placeholder.com/1200x500?text=Algorithm+Breakthrough",
     content: `
       <div class="space-y-6">
-        <img src="https://via.placeholder.com/1200x500?text=Algorithm+Breakthrough" 
+        <img src="https://i2.wp.com/www.geopolitika.hu/wp-content/uploads/2017/10/shutterstock_522911992.jpg?resize=800%2C445" 
              alt="Algorithm Illustration" 
              class="rounded-lg shadow-lg w-full" />
-
         <p class="text-lg text-gray-300 leading-relaxed">
-          For decades, <span class="text-green-400 font-semibold">Dijkstra’s algorithm</span> has been the undisputed ruler of single-source shortest path problems in graphs with non-negative weights. 
+          For decades, <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank"><span class="text-green-400 font-semibold">Dijkstra’s algorithm</span></a> has been the undisputed ruler of single-source shortest path problems in graphs with non-negative weights. 
           With a runtime of <code>O(m log n)</code>, it was long believed that deterministic improvements were impossible — 
           a belief reinforced by the so-called <em>sorting barrier</em>.
         </p>

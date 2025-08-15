@@ -5,3 +5,13 @@ body {
   background:  bg-dark text-gray-200 font-mono;
 }
 
+/* Custom text selection color for Pingbit */
+::selection {
+  background-color: #22c55e; /* Tailwind green-500 */
+  color: #0d0d0d; /* Dark text for contrast */
+}
+
+::-moz-selection {
+  background-color: #22c55e; /* For Firefox */
+  color: #0d0d0d;
+}
