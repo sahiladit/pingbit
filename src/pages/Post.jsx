@@ -1,20 +1,45 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { posts } from "../data/posts";
+import { Helmet } from "react-helmet";
 
 export default function Post() {
   const { id } = useParams();
   const post = posts.find(p => p.id === id);
 
-  if (!post) {
-    return <p className="text-red-400">Post not found.</p>;
-  }
+  if (!post) return <p className="text-gray-300">Post not found</p>;
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-green-400 mb-2">{post.title}</h1>
-      <p className="text-sm text-gray-400 mb-6">{post.date}</p>
-      <div dangerouslySetInnerHTML={{ __html: post.content }} className="text-gray-300 space-y-4" />
-      <Link to="/" className="mt-6 inline-block text-green-400 hover:underline">← Back to Home</Link>
+    <div className="max-w-3xl mx-auto space-y-6">
+      {/* SEO */}
+      <Helmet>
+        <title>{post.title} | Pingbit</title>
+        <meta name="description" content={post.description} />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.description} />
+        <meta property="og:image" content={post.image} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": post.title,
+            "image": [post.image],
+            "author": { "@type": "Person", "name": "Pingbit" },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Pingbit",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://via.placeholder.com/150?text=Pingbit"
+              }
+            },
+            "datePublished": post.date
+          })}
+        </script>
+      </Helmet>
+
+      {/* Blog Content */}
+      <h1 className="text-3xl font-bold text-green-400">{post.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: post.content }} />
     </div>
   );
 }

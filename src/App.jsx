@@ -1,7 +1,7 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
-import { Analytics } from "@vercel/analytics/react"; // ✅ Correct import
 import Post from "./pages/Post";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   return (
@@ -17,9 +17,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/post/:id" element={<Post />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
 
-      {/* Analytics will now work */}
       <Analytics />
 
       <footer className="mt-12 border-t border-gray-800 pt-4 text-center text-gray-500 text-sm">
