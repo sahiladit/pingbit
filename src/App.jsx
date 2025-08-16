@@ -27,6 +27,8 @@ export default function App() {
       <footer className="mt-12 border-t border-gray-800 pt-4 text-center text-gray-500 text-sm">
         © {new Date().getFullYear()} pingbit — Tech blogs for curious minds.
       </footer>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4783049144192348"
+     crossorigin="anonymous"></script>
     </div>
   );
 }

@@ -24,6 +24,8 @@ export default function About() {
         developments in algorithms, software, AI, and other emerging technologies. The goal is to make complex 
         technical content easy to understand and accessible.
       </p>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4783049144192348"
+     crossorigin="anonymous"></script>
     </div>
   );
 }
