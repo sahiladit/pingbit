@@ -12,10 +12,14 @@ export default function About() {
         You can reach me via email:{" "}
         <a 
           href="mailto:sahiladit17@gmail.com" 
-          className="text-green-400 underline hover:text-green-300"
+          className="text-green-400 underline hover:text-green-300" target="_blank"
         >
           sahiladit2004@gmail.com
         </a>
+        <br />
+        <p>Visit :
+        <a href="https://sahiladitportfolio.vercel.app/" className="text-green-400 underline hover:text-green-300" target="_blank"> Portfolio site</a>
+        </p>
       </p>
 
       <h2 className="text-2xl font-bold text-green-400">About Pingbit</h2>

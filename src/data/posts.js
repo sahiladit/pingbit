@@ -1,3 +1,5 @@
+import osintImage from "../assets/osint.png";
+
 export const posts = [
   {
     id: "dijkstra-throne-falls",
@@ -55,5 +57,68 @@ export const posts = [
         </p>
       </div>
     `,
+    tags : ["dijkstra-algorithm","algorithm","china","technology","new"],
   },
+  {
+    id: "all-about-osint",
+    title: "OSINT : Unmasking the Digital World",
+    date: "August 16, 2025",
+    description:
+      "In today's world everything is traceable! You're every click , every like, every post is a digital footprint. OSINT doesn't involve hacking like shown in movies , it is finding information about someone which is already available on Internet",
+    image: osintImage,
+    content: `
+      <div class="space-y-6">
+        <img src=${osintImage}
+             alt="osint-framework" 
+             class="rounded-lg shadow-lg w-full" loading="lazy" />
+        <p class="text-lg text-gray-300 leading-relaxed">
+          Every click, post, and interaction in the current digital world creates a trail.  These breadcrumbs are used by organizations, investigators, and even hackers to obtain information; this technique is called Open-Source Intelligence (OSINT).  In contrast to Hollywood hacking sequences, OSINT is about strategically examining publically available data rather than usually breaking into systems.
+        </p>
+
+        <h2 class="text-2xl font-bold text-green-400">What is OSINT?</h2>
+        <p>OSINT referes to as Open Source Intelligence. It includes analysing information available on : </p>
+        <ul class="list-disc list-inside space-y-2 text-gray-300">
+        <li><strong>Social Media Posts</strong>
+        <li><strong>News Articles</strong>
+        <li><strong>Internet(Browsing)</strong>
+        <li><strong>Public Government Records</strong>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-green-400">OSINT tools : </h2>
+        <p>There are many tools for performing OSINT operations. But the popular ones include : 
+        <ul class="list-disc list-inside space-y-2 text-gray-300">
+        <li><strong>Maltego</strong> : For link analysis and data mining.</li>
+        <li><strong>Google Dorking</strong>  : Using advanced Google queries to find hidden info.</li>
+        <li><strong>theHarvester</strong> : Gathers emails, subdomains, and employee names.</li>
+        <li><strong>Public Government Records</strong>
+        </ul>
+        <br>
+        Explore more OSINT tools : <a href="https://osintframework.com/" target="_blank"><span class="text-green-400 font-semibold">OSINT Framework</span></a>
+      </p>
+
+      <h2 class="text-2xl font-bold text-green-400">How to Stay Safe from OSINT</h2>
+      <p class="text-lg text-gray-300 leading-relaxed">
+  While you can’t erase your digital footprint completely, you can make it much harder for others to gather 
+  sensitive information about you. Here are some tips:
+</p>
+    <ul class="list-disc list-inside space-y-2 text-gray-300">
+  <li><strong>Have I Been Pwned? </strong> – Check if your email/credentials are leaked.</li>
+  <li><strong>Use Strong & Unique Passwords</strong> – Don’t reuse the same password across multiple sites.</li>
+  <li><strong>Enable 2FA</strong> – Add an extra layer of protection to your accounts.</li>
+  <li><strong>Be Careful What You Post</strong> – Avoid oversharing personal details like your location, workplace, or daily routines.</li>
+  <li><strong>Audit Your Digital Footprint</strong> – Search your own name and email to see what’s publicly available.</li>
+  <li><strong>Use Privacy Settings</strong> – Lock down your social media profiles where possible.</li>
+  <li><strong>Regularly Monitor Data Breaches</strong> – Keep checking services like Have I Been Pwned.</li>
+</ul>
+
+    <h2 class="text-2xl font-bold text-green-400">Risks and Ethics</h2>
+    <p>
+    While OSINT itself is legal (as it uses public data), misuse can cross into unethical or illegal territory. The golden rule: <span class="font-bold bg-red-600 p-0.5 text-white">Use it responsibly</span>.
+    </p>
+    
+
+      </div>
+    `,
+    tags : ["cybersecurity","osint","new","hacking","digital-security","Ai","programming","software","trends"]
+  }
 ];

@@ -14,6 +14,8 @@ export default function Post() {
       <Helmet>
         <title>{post.title} | Pingbit</title>
         <meta name="description" content={post.description} />
+        <meta name="keywords" content={post.tags.join(", ")} />
+        <meta name="description" content={post.description} />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.description} />
         <meta property="og:image" content={post.image} />
