@@ -10,13 +10,13 @@ export default function Home() {
           Pingbit — Tech Unplugged
         </h1>
         <p className="text-gray-400 max-w-xl mx-auto">
-          Deep dives into AI, Cybersecurity, Quantum Computing, and the tech that shapes tomorrow.
+          Deep dives into AI, Cybersecurity the tech that shapes tomorrow.
         </p>
       </section>
 
       {/* CATEGORIES */}
       <section className="flex flex-wrap justify-center gap-3">
-        {["AI", "Cybersecurity", "IoT", "Quantum", "Cloud"].map(cat => (
+        {["AI", "Cybersecurity", "IoT", "Technology", "Cloud"].map(cat => (
           <span
             key={cat}
             className="px-4 py-1 border border-green-400 text-green-400 text-sm rounded-full hover:bg-green-400 hover:text-black transition"
