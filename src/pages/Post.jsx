@@ -10,7 +10,6 @@ export default function Post() {
 
   return (
     <div className="max-w-3xl mx-auto space-y-6">
-      {/* SEO */}
       <Helmet>
         <title>{post.title} | Pingbit</title>
         <meta name="description" content={post.description} />
