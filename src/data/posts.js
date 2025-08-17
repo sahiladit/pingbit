@@ -2,6 +2,45 @@ import osintImage from "../assets/osint.png";
 
 export const posts = [
   {
+    id: "iphone17",
+    title: "Iphone 17 Rumours : What to Expect from Apple's Next Release",
+    date: "August 17, 2025",
+    description:"Apple's 2025 release is expected to feature a new design that is more fashionable, slimmer, and lighter than before.  The iPhone 17 may represent a radical change in design, making it one of the most anticipated releases in years."
+      ,
+    image: osintImage,
+    content: `
+      <div class="space-y-6">
+        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202508/iphone-17-series-242753724-16x9.png?VersionId=rM_UC2rX4sJ0AI8QXF5m0c2Z_4OdQZms&size=690:388"
+             alt="osint-framework" 
+             class="rounded-lg shadow-lg w-full" loading="lazy" />
+            <p class="left-1/2 text-green-400">(Image src : INDIA TODAY)</p>
+        <p class="text-lg text-gray-300 leading-relaxed">
+          One of Apple's most daring updates to date appears to be the iPhone 17.  The lineup, which is anticipated in September 2025, may include a new, incredibly thin 'iPhone 17 Air', 120Hz ProMotion screens in all models, a more precise 24MP front camera, and potent A19 CPUs.  The Pro models might have larger batteries, lightning-fast charging, and a revamped camera bar with a 48MP zoom lens.  The iPhone 17 series is expected to combine power, style, and next-generation innovation with its sleek new hues and potential price increases.
+        </p>
+        <h2 class="text-2xl font-bold text-green-400">Release & Models</h2>
+        <p> Early September 2025 is when Apple's iPhone 17 lineup is anticipated to make its debut. According to reports, the launch is scheduled for September 9, 2025, with pre-orders taking place in the middle of the month and shipments beginning on September 19. The base iPhone 17, the new mid-tier iPhone 17 "Air," the iPhone 17 Pro and 17 Pro Max, and no "Plus" variant will probably be the four versions in the lineup. The Air variant, which has a smaller design (perhaps about 6 mm thick) and a ~6.6 mm display, is reported to replace the previous Plus size.
+
+Anticipated release date: early September 2025 (ship by September 19; event by September 9).
+
+iPhone models include the 17, 17, Air, Pro, and Pro Max (without the Plus).
+iPhone 17 Air: The Plus's slim "Air" variant (around 6.6 inches in screen and 6 mm thick)</p>
+      
+    <h2 class="text-2xl font-bold text-green-400">Design & Colors</h2>
+    <p>Leaked prototype units point to a significant redesign.  Reminiscent of Google's Pixel phones, the Pro versions seem to abandon the previous square camera island in favor of a full-width rectangle camera bar.  According to early speculations, Apple may switch the titanium frame on the 17 Pro series to an aluminum one for durability.  Meanwhile, the basic iPhone 17 will have the same two-vertical-lens rear as the iPhone 16.</p>
+    <h2 class="text-2xl font-bold text-green-400">Performance</h2>
+    <p>Apple's next CPUs are anticipated to be used in all iPhone 17 versions.  The iPhone 17 Pro and Pro Max will receive the speedier A19 Pro chip (made on a cutting-edge 3nm technology), while the iPhone 17 and 17 Air will probably have the ordinary A19 chip.
+    According to rumors, all versions will have 12 GB of RAM, up from the 16 Pro's 8 GB.
+    </p>
+
+    <h2 class="text-2xl font-bold text-green-400">Battery</h2>
+    <p>Sources indicate that the 17 Pro Max will have a capacity of approximately 5,000 mAh, making it the largest iPhone battery ever. It is approximately 8% larger than the 16 Pro Max.  Because of its thin frame, the smaller 17 Air would require a lower battery (~2,800 mAh).</p>
+
+    <h2 class="text-2xl font-bold text-green-400">Pricing</h2>
+    <p>According to a Jefferies analyst and a well-known Weibo leaker, each model will cost roughly $50 more in the US than its iPhone 16 equivalent.The iPhone 17 Pro might retail for about $1,049 in that case (up from $999), and the 17 Pro Max for about $1,249.In the United States, the new 17 Air is anticipated to cost approximately $899, the same as the 16 Plus from the previous year. Of course this are just rumours.</p>
+    `,
+    tags : ["apple","google","google-pixel","iphone","iphone17","rumours","iphone17-pro-max","iphon16","iphone-16-pro-max","iphone-17-pro","trends","Apple iPhone 2025","iPhone 17 design","Apple launch event","iPhone 17 rumors","iPhone 17 leaks","Smartphone trends"]
+  },
+  {
     id: "all-about-osint",
     title: "OSINT : Unmasking the Digital World",
     date: "August 16, 2025",
@@ -57,6 +96,9 @@ export const posts = [
     <p>
     While OSINT itself is legal (as it uses public data), misuse can cross into unethical or illegal territory. The golden rule: <span class="font-bold bg-red-600 p-0.5 text-white">Use it responsibly</span>.
     </p>
+
+    <h2 class="text-2xl font-bold text-green-400">Software</h2>
+    <p>The iPhone 17 will come with iOS 26, which is said to have new features throughout Apple's ecosystem as well as a new "Liquid Glass" user interface (translucent, glass-like layers).</p>
     
 
       </div>
