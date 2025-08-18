@@ -3,6 +3,63 @@ import './post.css';
 
 export const posts = [
   {
+    id: "airtel-outage-aug-2025",
+    title: "Airtel Services Down: Millions of Users Affected Across India",
+    date: "August 18, 2025",
+    description: "Airtel, one of India's largest telecom providers, is experiencing a widespread outage affecting mobile, broadband, and DTH services for millions of users.",
+    image: "https://via.placeholder.com/1200x500?text=Airtel+Outage",
+    content: `
+      <div class="space-y-6">
+        <img src="https://assets.airtel.in/teams/simplycms/web/images/contact-us-page-17062020.png"
+             alt="Airtel Outage" 
+             class="rounded-lg shadow-lg w-full" loading="lazy" />
+
+        <h2 class="text-2xl font-bold text-green-400">What Happened?</h2>
+        <p>
+          On August 18, 2025, Airtel users reported connectivity issues across multiple services including mobile calls, internet, and DTH services. The outage appears to be widespread, affecting millions of customers across major cities.
+        </p>
+
+        <h2 class="text-2xl font-bold text-green-400">Impact on Users</h2>
+        <p>
+          Many users experienced dropped calls, slow internet speeds, and failed DTH service access. Social media platforms were flooded with complaints and queries about the downtime. Businesses relying on Airtel for communication were also affected, causing disruption in operations.
+        </p>
+
+        <h2 class="text-2xl font-bold text-green-400">Possible Causes</h2>
+        <p>
+          While Airtel has not officially confirmed the reason, such outages are usually caused by:
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-gray-300">
+          <li>Network congestion due to high traffic volume.</li>
+          <li>Maintenance or upgrade of core network infrastructure.</li>
+          <li>Hardware or software failures in telecom servers or routers.</li>
+          <li>External issues like power outages or fiber cuts.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-green-400">What Users Can Do</h2>
+        <p>
+          Users can try the following steps:
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-gray-300">
+          <li>Restart your device and SIM card.</li>
+          <li>Check Airtel's official service status page or social media handles.</li>
+          <li>Switch to alternate network or Wi-Fi if urgent.</li>
+          <li>Contact Airtel customer support for assistance.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-green-400">Airtel’s Response</h2>
+        <p>
+          Airtel has acknowledged the outage and stated that their technical teams are actively working to restore services. Updates are being shared on their official Twitter handle and website.
+        </p>
+
+        <h2 class="text-2xl font-bold text-green-400">Conclusion</h2>
+        <p>
+          Outages like this highlight the reliance on telecom networks in everyday life and the importance of robust infrastructure. Users are advised to stay updated with official channels for restoration updates.
+        </p>
+      </div>
+    `,
+    tags: ["airtel","outage","network","telecom","internet","mobile","DTH","connectivity","technology","news","India"]
+},
+  {
     id: "dos-ddos",
     title: "DOS and DDOS Attacks on a Network",
     date: "August 18, 2025",
