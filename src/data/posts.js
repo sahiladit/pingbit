@@ -1,6 +1,48 @@
 import osintImage from "../assets/osint.png";
+import './post.css';
 
 export const posts = [
+  {
+    id: "dos-ddos",
+    title: "DOS and DDOS Attacks on a Network",
+    date: "August 18, 2025",
+    description:"DDOS is a part of DOS attack which is refered to as Denial Of Service. Both aim to dsrupt the network by overwhelming it with traffic. Both are used to "
+      ,
+    image: osintImage,
+    content: `
+      <div class="space-y-6">
+        <img src="https://www.thesslstore.com/blog/wp-content/uploads/2019/10/what-is-ddos-botmaster.png"
+             alt="ddos-network" 
+             class="rounded-lg shadow-lg w-full" loading="lazy" />
+        <p class="text-lg text-white rounded-lg p-2 flex justify-center items-center leading-relaxed bg-red-600">
+         Desclaimer : The methods and tools mentioned in this blog are intended to educational and ethical use only.
+        </p>
+        <h2 class="text-2xl font-bold text-green-400">What is DOS and DDOS?</h2>
+        <p>DOS means Denial Of Sevice, which is nothing but overwhelming any system with traffic. DDOS is a part of DOS. The main Difference between DOS and DDOS is that in DDOS we use multiple devices for the attack and in DOS there is only a single source of attack. In this perticular blog we will cover DOS attack with some tools and method on a system which is in the same network as you are. You will learn how you can send packages to the open ports of any system in the network.</p>
+
+        <h2 class="text-2xl font-bold text-green-400">How to find all the devices connect to your network?</h2>
+        <p>To find all the devices connected in your network we use a command <code class="command">arp -a</code>.
+        <br>
+        The command 'arp' (Address Resolution Protocol) t allows users to view the mapping between IP addresses and their corresponding physical (MAC) addresses, and also to add, delete, or modify these mappings. 
+        The '-a' flag dispays the current ARP entries. There are other flags such as -v,-g which also helps for finding out the devices in the network with different parameters.
+        <br>
+        <a href = "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/arp"target="_blank"><span class="text-green-400 font-semibold decoration-green-400 underline">Read More about arp</span></a>
+        </p>
+
+        <h2 class="text-2xl font-bold text-green-400">How to map on any IP connected in the network?</h2>
+        <p>Generally for this task the Network Mapper (nmap) library is used. You can download it for free for any system. Using <code class="command">nmap [target_ip]</code> we can get the information about the ports of that system , whether they are open or closed. We are interested in the open ports , which will lead to weakness of that system.
+        <br>
+        <a href = "https://nmap.org/"target="_blank"><span class="text-green-400 font-semibold decoration-green-400 underline">Read More about NMAP</span></a>
+        </p>
+
+        <h2 class="text-2xl font-bold text-green-400">How to send Packets to that open port?</h2>
+        <p>Since we have the information about the open ports of the target system we can exploit that. For this task generally we use Netcat library which helps us to send the packets. Before using Netcat we can use <code class="command">ping</code></p> to double check there's an established connection between your system and the target system. Once it is confirmed we can use <code class="command">ncat [ip] [port no]</code> command to send the packages. So to exploit the port we can send malicious packets to the open ports. Due to security policies we cannot teach you how to make malicious packets , but in upcoming blogs you will learn about making packets.
+     <br>
+        <a href = "https://nmap.org/ncat/"target="_blank"><span class="text-green-400 font-semibold decoration-green-400 underline">Read More about Netcat</span></a>
+        </p>
+    `,
+    tags : ["hack","hacking","network","networking","ddos","dos","denial of service","hacker","MS-DOS","operating system","system programming","command line","computer basics","tutorial","How to","DOS tools","hacking tools","linux","technology","software","engineering"]
+  },
   {
     id: "iphone17",
     title: "Iphone 17 Rumours : What to Expect from Apple's Next Release",
