@@ -6,7 +6,7 @@ export const posts = [
     id: "dos-ddos",
     title: "DOS and DDOS Attacks on a Network",
     date: "August 18, 2025",
-    description:"DDOS is a part of DOS attack which is refered to as Denial Of Service. Both aim to dsrupt the network by overwhelming it with traffic. Both are used to "
+    description:"DDOS is a part of DOS attack which is refered to as Denial Of Service. Both aim to disrupt the network by overwhelming it with traffic. Both are used to "
       ,
     image: osintImage,
     content: `
