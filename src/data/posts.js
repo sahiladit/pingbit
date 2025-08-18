@@ -57,7 +57,23 @@ export const posts = [
         </p>
       </div>
     `,
-    tags: ["airtel","outage","network","telecom","internet","mobile","DTH","connectivity","technology","news","India"]
+    tags: [
+      "airtel",
+      "airtel network issue",
+      "airtel news",
+      "airtel down",
+      "airtel outage",
+      "airtel network issue today",
+      "is airtel down",
+      "airtel network",
+      "airtel network problem today",
+      "airtel issue",
+      "airtel network down",
+      "airtel network issue in delhi",
+      "airtel issue today",
+      "airtel news today",
+      "network","telecom","internet","mobile","DTH","connectivity","technology","news","India"
+    ]
 },
   {
     id: "dos-ddos",
