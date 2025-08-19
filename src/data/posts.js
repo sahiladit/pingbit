@@ -14,10 +14,10 @@ export const posts = [
              alt="sam altman giving a speech" 
              class="rounded-lg shadow-lg w-full" loading="lazy" />
              <h2 class="text-2xl font-bold text-green-400">In 2025, AGI will be digital coworkers.</h2>
-             <p>Sam Altman sees a time when each of us has a personal team of **AI experts**, significantly accelerating creativity and productivity, rather than when AI replaces humans.</p>
+             <p>Sam Altman sees a time when each of us has a personal team of <span class="text-green-400">AI experts</span>, significantly accelerating creativity and productivity, rather than when AI replaces humans.</p>
 
              <h2 class="text-2xl font-bold text-green-400">AI-Powered Profusion & Financial Fairness</h2>
-             <p>Altmanx explained on the <em>People by WTF</em> podcast how AGI might create **mass abundance**, leading to changes in the economy such as sovereign wealth funds, universal basic income, or experimental currencies to guarantee equitable distribution.  He thinks India will play a significant role.</p>
+             <p>Altmanx explained on the <em>People by WTF</em> podcast how AGI might create <span class="text-green-400">mass abundance</span>, leading to changes in the economy such as sovereign wealth funds, universal basic income, or experimental currencies to guarantee equitable distribution.  He thinks India will play a significant role.</p>
 
              <h2 class="text-2xl font-bold text-green-400">AI Bubble & Caution About Hype</h2>
              <p>Altman likened the current AI financing frenzy to the dot-com bubble in an open warning.  Despite its potential, he acknowledges that investor exuberance can be exaggerated, pointing out that the recent performance of GPT-5 was disappointing and caused a brief reversal.</p>
