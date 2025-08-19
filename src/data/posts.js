@@ -28,7 +28,7 @@ export const posts = [
              <h2 class="text-2xl font-bold text-green-400">A Word on Regulation and Risks<h2>
              <p>Altman is aware that enormous power entails considerable responsibility.  He emphasizes the necessity of AI alignment research and international governance, cautions against abuse by authoritarian governments, and highlights dangers like AI-fueled fraud or "lights-out" situations.</p>
     `,
-    tags : ["Sam Altman", "AGI", "AI predictions", "AI workforce", "AI abundance", "economy", "job future", "AI regulation", "India tech", "OpenAI"]
+    tags : ["Sam Altman", "AGI", "AI predictions", "AI workforce", "AI abundance", "economy", "job future", "AI regulation", "India tech", "OpenAI","chatgpt","chatgpt5","trending","AI"]
   },
   {
     id: "airtel-outage-aug-2025",
