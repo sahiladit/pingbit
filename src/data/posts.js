@@ -5,12 +5,12 @@ export const posts = [
   {
   id: "realme-p4-pro-5g-launch-india",
   title: "Realme P4 Pro 5G: Price and Launch in India",
-  date: "August 19, 2025",
+  date: "August 20, 2025",
   description:"Realme has officially launched the P4 Pro 5G in India. Here's everything you need to know — from price, specs, to availability.",
   image: "https://fdn.gsmarena.com/imgroot/news/24/06/realme-p4-pro-5g/-1200x900m/gsmarena_001.jpg",
   content: `
     <div class="space-y-6">
-      <img src="https://fdn.gsmarena.com/imgroot/news/24/06/realme-p4-pro-5g/-1200x900m/gsmarena_001.jpg"
+      <img src="https://static2.realme.net/images/realme-p4-5g/1754970148107037d477ed4974840a6e04fe339d9b3a9.webp"
            alt="Realme P4 Pro 5G official image" 
            class="rounded-lg shadow-lg w-full" loading="lazy" />
 
