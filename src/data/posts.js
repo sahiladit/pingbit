@@ -3,6 +3,44 @@ import './post.css';
 
 export const posts = [
   {
+  id: "realme-p4-pro-5g-launch-india",
+  title: "Realme P4 Pro 5G: Price and Launch in India",
+  date: "August 19, 2025",
+  description:"Realme has officially launched the P4 Pro 5G in India. Here's everything you need to know — from price, specs, to availability.",
+  image: "https://fdn.gsmarena.com/imgroot/news/24/06/realme-p4-pro-5g/-1200x900m/gsmarena_001.jpg",
+  content: `
+    <div class="space-y-6">
+      <img src="https://fdn.gsmarena.com/imgroot/news/24/06/realme-p4-pro-5g/-1200x900m/gsmarena_001.jpg"
+           alt="Realme P4 Pro 5G official image" 
+           class="rounded-lg shadow-lg w-full" loading="lazy" />
+
+      <h2 class="text-2xl font-bold text-green-400">Realme P4 Pro 5G – Official Launch</h2>
+      <p>The <span class="text-green-400">Realme P4 Pro 5G</span> has officially launched in India, making waves in the mid-premium 5G smartphone segment. Known for its sleek design, powerful hardware, and competitive pricing, Realme is aiming to capture both budget and performance-focused consumers.</p>
+
+      <h2 class="text-2xl font-bold text-green-400">Realme P4 Pro 5G Price in India</h2>
+      <p>The device has been priced starting at <span class="font-semibold">₹29,999</span> for the base variant (8GB RAM + 128GB storage). Higher variants with 12GB RAM + 256GB storage are priced at <span class="font-semibold">₹34,999</span>. The device will be available across Flipkart, Realme online store, and major offline retailers.</p>
+
+      <h2 class="text-2xl font-bold text-green-400">Specifications & Features</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>6.7-inch AMOLED Display, 120Hz refresh rate</li>
+        <li>Snapdragon 8s Gen 3 Processor</li>
+        <li>50MP + 8MP + 2MP Triple Rear Camera</li>
+        <li>32MP Front Camera</li>
+        <li>5,000mAh Battery with 100W fast charging</li>
+        <li>Runs on Realme UI 6.0 (Android 15)</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-green-400">Availability</h2>
+      <p>The Realme P4 Pro 5G will go on sale starting <span class="font-semibold">August 25, 2025</span>. Pre-orders are already live, and buyers can avail launch offers including instant discounts on select bank cards.</p>
+
+      <h2 class="text-2xl font-bold text-green-400">Should You Buy?</h2>
+      <p>If you are looking for a <span class="text-green-400">premium mid-range 5G device</span> with top-notch performance, fast charging, and a vibrant display, the Realme P4 Pro 5G is a strong contender against rivals like iQOO Neo series, OnePlus Nord series, and Samsung Galaxy A-series.</p>
+    </div>
+  `,
+  tags : ["realme p4 pro 5g","realme p4 pro price","realme p4 price", "Realme", "Realme P4 Pro 5G", "Realme launch India", "Realme price", "Realme P4 Pro specs", "Realme 5G phone", "technology", "smartphone", "trending", "mobile launch", "gadgets", "electronics"]
+},
+
+  {
     id: "altman-ai-predictions-2025",
     title: "Sam Altman’s AI Crystal Ball: 2025 & Beyond",
     date: "August 19, 2025",
