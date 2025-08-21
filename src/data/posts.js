@@ -1,7 +1,56 @@
 import osintImage from "../assets/osint.png";
+import osi from "../assets/osi.png"
 import './post.css';
 
 export const posts = [
+  {
+  id: "osi-model-7-layers-tanenbaum",
+  title: "The OSI Model in Computer Networks: Explained with 7 Layers",
+  date: "August 21, 2025",
+  description: "A detailed explanation of the OSI Reference Model, based on Andrew S. Tanenbaum’s classic Computer Networks book — covering its history, principles, and the role of all 7 layers.",
+  image: "https://www.geeksforgeeks.org/wp-content/uploads/OSI-Model.jpg",
+  content: `
+    <div class="space-y-6">
+      <img src=${osi}
+           alt="OSI 7 Layers Diagram"
+           class="rounded-lg shadow-lg w-full" loading="lazy" />
+      <p>(src : Computer Networks by ANDREW S. TANENBAUM , DAVID J. WETHERALL)</p>
+      <h2 class="text-2xl font-bold text-green-400">Introduction to the OSI Model</h2>
+      <p>The <span class="text-green-400">OSI (Open Systems Interconnection) Reference Model</span> was developed by the <span class="font-semibold">International Standards Organization (ISO)</span> in the 1980s (Day & Zimmermann, 1983) as a first step toward standardizing network communication. Revised in 1995, it defines a conceptual framework for how systems communicate across networks.</p>
+      <p>Unlike a network architecture (which specifies actual protocols), the OSI Model describes <span class="font-semibold">what each layer should do</span> — acting as a universal guideline for protocol designers and implementers.</p>
+
+      <h2 class="text-2xl font-bold text-green-400">Design Principles of the OSI Model</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>A new layer is created whenever a new abstraction is needed.</li>
+        <li>Each layer performs a well-defined function.</li>
+        <li>Functions should support the definition of international standards.</li>
+        <li>Layer boundaries minimize information flow across interfaces.</li>
+        <li>The number of layers should balance clarity and practicality — not too many, not too few.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-green-400">The Seven Layers of the OSI Model</h2>
+      <p>Each layer of the OSI model provides services to the layer above it and depends on the services of the layer below. Here’s a breakdown based on Tanenbaum’s explanation:</p>
+      
+      <ul class="list-disc pl-6 space-y-2">
+        <li><span class="font-semibold text-green-400">1. Physical Layer:</span> Handles transmission of raw bits over a medium. Concerned with signals, voltages, data rates, connectors, and physical media.</li>
+        <li><span class="font-semibold text-green-400">2. Data Link Layer:</span> Ensures reliable transfer by framing data, detecting/correcting errors, and handling flow control. Includes the MAC (Medium Access Control) sublayer for shared channels.</li>
+        <li><span class="font-semibold text-green-400">3. Network Layer:</span> Manages packet routing, addressing, and congestion control. Ensures data gets from source to destination, possibly across multiple heterogeneous networks.</li>
+        <li><span class="font-semibold text-green-400">4. Transport Layer:</span> Provides end-to-end communication. Splits data into segments, ensures reliable delivery, and controls flow. Examples: TCP (reliable), UDP (faster, no guarantee).</li>
+        <li><span class="font-semibold text-green-400">5. Session Layer:</span> Establishes, maintains, and synchronizes sessions. Handles dialog control, token management, and checkpoints for crash recovery.</li>
+        <li><span class="font-semibold text-green-400">6. Presentation Layer:</span> Ensures correct syntax and semantics of data. Handles encoding, encryption, compression, and data format translation (so different systems can understand each other).</li>
+        <li><span class="font-semibold text-green-400">7. Application Layer:</span> Closest to the user. Provides services such as HTTP (web), SMTP (email), FTP (file transfer), and DNS (name resolution).</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-green-400">Why the OSI Model Matters</h2>
+      <p>The OSI Model is not just theoretical. It simplifies <span class="font-semibold">network troubleshooting</span>, ensures <span class="font-semibold">interoperability between systems</span>, and provides a blueprint for building secure, scalable communication protocols. While real-world internet protocols often follow the <span class="text-green-400">TCP/IP model</span>, the OSI framework remains a critical teaching and reference tool in networking.</p>
+
+      <h2 class="text-2xl font-bold text-green-400">Conclusion</h2>
+      <p>Andrew Tanenbaum’s detailed explanation of the OSI Model shows why it has become the <span class="text-green-400">foundation of modern networking education</span>. Even though many of the original ISO protocols faded away, the OSI Model lives on as the universal way to understand “how data travels” — from physical signals to the apps we use every day.</p>
+    </div>
+  `,
+  tags: ["OSI Model", "Andrew Tanenbaum", "Computer Networks", "Networking Basics", "ISO OSI", "7 Layers", "TCP/IP vs OSI", "Data Communication", "Network Protocols", "Technology"]
+},
+
   {
   id: "realme-p4-pro-5g-launch-india",
   title: "Realme P4 Pro 5G: Price and Launch in India",
