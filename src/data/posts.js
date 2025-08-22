@@ -36,7 +36,7 @@ export const posts = [
       <p>The launch of OpenAI’s India office is more than just an expansion — it’s a <span class="text-green-400">strategic partnership with the future</span>. As India rises as a global AI hub, this move could accelerate breakthroughs and create opportunities for millions. For developers, startups, and industries — the AI revolution in India just got a major boost.</p>
     </div>
   `,
-  tags: ["OpenAI", "Artificial Intelligence", "OpenAI India", "AI Expansion", "AI Startups", "Technology News", "Digital India", "AI Research", "Sam Altman", "Future of AI","India","Openai new office in India","Openai India","Jobs","jobs ai"]
+  tags: ["AI jobs India","AI office expansion","Sam Altman India AI","AI revolution India","OpenAI career opportunities","OpenAI", "Artificial Intelligence", "OpenAI India", "AI Expansion", "AI Startups", "Technology News", "Digital India", "AI Research", "Sam Altman", "Future of AI","India","Openai new office in India","Openai India","Jobs","jobs ai"]
 },
   {
   id: "osi-model-7-layers-tanenbaum",
