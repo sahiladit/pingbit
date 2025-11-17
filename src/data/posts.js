@@ -8,11 +8,11 @@ export const posts = [
   title: "Data Centers in Space: The Next Big Leap in Computing?",
   date: "August 24, 2025",
   description: "With space-tech startups experimenting with servers beyond Earth, the idea of data centers in space is becoming a reality. Here's how it works, why companies are doing it, and what it means for the future of computing.",
-  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/International_Space_Station_after_undocking_of_STS-132.jpg/640px-International_Space_Station_after_undocking_of_STS-132.jpg",
+  image: "https://hackaday.com/wp-content/uploads/2025/06/SpaceData.jpg?w=800",
   content: `
 <div class="space-y-6">
   <img 
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/International_Space_Station_after_undocking_of_STS-132.jpg/640px-International_Space_Station_after_undocking_of_STS-132.jpg" 
+    src="https://hackaday.com/wp-content/uploads/2025/06/SpaceData.jpg?w=800" 
     alt="Space Data Center" 
     class="rounded-lg shadow-lg w-full"
     loading="lazy"
