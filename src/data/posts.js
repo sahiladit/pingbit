@@ -4,6 +4,90 @@ import './post.css';
 
 export const posts = [
   {
+  id: "data-centers-in-space",
+  title: "Data Centers in Space: The Next Big Leap in Computing?",
+  date: "August 24, 2025",
+  description: "With space-tech startups experimenting with servers beyond Earth, the idea of data centers in space is becoming a reality. Here's how it works, why companies are doing it, and what it means for the future of computing.",
+  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/International_Space_Station_after_undocking_of_STS-132.jpg/640px-International_Space_Station_after_undocking_of_STS-132.jpg",
+  content: `
+<div class="space-y-6">
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/International_Space_Station_after_undocking_of_STS-132.jpg/640px-International_Space_Station_after_undocking_of_STS-132.jpg" 
+    alt="Space Data Center" 
+    class="rounded-lg shadow-lg w-full"
+    loading="lazy"
+  />
+
+  <h2 class="text-2xl font-bold text-green-400">Data Centers… in Space?</h2>
+  <p>The concept of <span class="text-green-400">data centers in space</span> sounds like sci-fi, but it’s already happening. Recently, Y-Combinator–backed startup <span class="font-semibold">Starcloud</span> made headlines by launching a satellite equipped with an <span class="text-green-400">NVIDIA H100 GPU</span> into orbit — yes, the same GPU used for cutting-edge AI training on Earth. Suddenly, the cosmos has become the newest address for cloud computing.</p>
+
+  <h2 class="text-2xl font-bold text-green-400">Why Put Servers in Orbit?</h2>
+  <p>It may seem wild, but there are solid reasons companies are looking upward:</p>
+  <ul class="list-disc pl-6 space-y-2">
+    <li><span class="font-semibold">Cooling Advantages:</span> Space is naturally cold. With no need for massive cooling towers, data centers become far more energy-efficient.</li>
+    <li><span class="font-semibold">Constant Solar Power:</span> Satellites get nearly continuous sunlight, giving them reliable energy — perfect for power-hungry GPUs.</li>
+    <li><span class="font-semibold">Global Coverage:</span> Data centers in orbit can deliver low-latency access to multiple regions simultaneously.</li>
+    <li><span class="font-semibold">Security:</span> Hard to hack a server when it's literally circling Earth at 28,000 km/h.</li>
+  </ul>
+
+  <h2 class="text-2xl font-bold text-green-400">Starcloud’s Game-Changing Mission</h2>
+  <p>Starcloud’s launch wasn’t just symbolic — it’s proof that <span class="font-semibold">orbital computing</span> is possible. Their satellite hosts an <span class="text-green-400">NVIDIA H100</span>, enabling AI inference directly in space. From running Earth observation models to processing satellite imagery on the fly, the potential is huge.</p>
+
+  <p>In simple terms: space just got its first GPU workstation. And it’s not lagging — it’s literally above us, working overtime.</p>
+
+  <h2 class="text-2xl font-bold text-green-400">How Space Data Centers Could Transform Industries</h2>
+  <ul class="list-disc pl-6 space-y-2">
+    <li><span class="font-semibold">AI & ML:</span> Training and inference without the heat and power problems we face on Earth.</li>
+    <li><span class="font-semibold">Climate Monitoring:</span> Process satellite data in orbit, send only the final results back.</li>
+    <li><span class="font-semibold">Defense & Security:</span> Faster and more secure processing for surveillance data.</li>
+    <li><span class="font-semibold">Telecom:</span> Ultra-fast processing for global internet and communication networks.</li>
+  </ul>
+
+  <h2 class="text-2xl font-bold text-green-400">The Fun Part: Space Servers = Zero AC Bills</h2>
+  <p>Imagine running a data center without spending half your money on cooling. Space naturally handles it. No AC, no chillers, no giant fans — just cosmic cold working overtime like the universe’s personal air conditioner. If there were awards for “best natural cooling system,” space would win by light-years.</p>
+
+  <h2 class="text-2xl font-bold text-green-400">Challenges (Because Space Is Not Always Friendly)</h2>
+  <p>Of course, it’s not all smooth space-sailing:</p>
+  <ul class="list-disc pl-6 space-y-2">
+    <li><span class="font-semibold">Launch Costs:</span> Rockets aren't cheap — yet.</li>
+    <li><span class="font-semibold">Space Radiation:</span> Electronics can get fried if not shielded properly.</li>
+    <li><span class="font-semibold">Maintenance:</span> You can’t call an engineer to “just restart the server” when it's 500 km above Earth.</li>
+  </ul>
+
+  <h2 class="text-2xl font-bold text-green-400">The Future: Cloud Above the Clouds</h2>
+  <p>With companies like Starcloud proving that GPUs can operate in orbit, the idea of true <span class="font-semibold">space cloud computing</span> doesn’t look far-fetched anymore. Imagine renting a server that’s literally in space — talk about premium hosting!</p>
+
+  <p>In the coming years, we could see fleets of orbiting data centers powering AI, climate models, communication networks, and maybe even streaming platforms (Netflix in space? Why not!).</p>
+
+  <h2 class="text-2xl font-bold text-green-400">Conclusion</h2>
+  <p>Data centers in space aren’t just a futuristic concept — they’re officially taking off. With breakthroughs like Starcloud’s H100-powered satellite, we’re entering a new era where computing goes beyond Earth, literally. The cloud is no longer above your head… it’s above the planet.</p>
+</div>
+  `,
+  tags: [
+    "data centers in space",
+    "space computing",
+    "orbital data centers",
+    "starcloud",
+    "YC startup",
+    "NVIDIA H100",
+    "AI in space",
+    "space tech",
+    "cloud computing",
+    "satellite technology",
+    "future of computing",
+    "GPUs in space",
+    "AI hardware",
+    "space industry",
+    "space infrastructure",
+    "low earth orbit",
+    "space innovation",
+    "tech news",
+    "elon musk",
+    "spacex",
+    "satellite cloud"
+  ]
+},
+  {
 id: "tiktok-back-in-india",
 title: "Is TikTok Back in India? Users Report Access Restored",
 date: "August 23, 2025",
