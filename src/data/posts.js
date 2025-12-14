@@ -4,6 +4,221 @@ import './post.css';
 
 export const posts = [
   {
+  id: "disappear-from-internet",
+  title:"Disappearing From the Internet: Myth vs Reality",
+  date: "December 14, 2025",
+  description: "Trying to disappear from the internet sounds tempting, but once your data is online, it never truly vanishes. This blog explains why complete deletion is impossible, how OSINT and AI make tracking easy, and how even you can unknowingly expose yourself.",
+  image: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=800",
+  content: `
+<div class="space-y-10 max-w-3xl mx-auto leading-relaxed">
+
+  <!-- Hero Image -->
+  <img 
+    src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=800" 
+    alt="Digital footprint and anonymity" 
+    class="rounded-xl shadow-xl w-full"
+    loading="lazy"
+  />
+
+  <!-- Key Warning -->
+  <div class="border-l-4 border-red-400 bg-red-400/10 p-4 rounded-lg">
+    <p class="text-lg font-semibold text-red-400">
+      You cannot disappear from the internet. If you ever uploaded your name, photo,
+      email, or number — it will never be deleted permanently.
+    </p>
+  </div>
+
+  <!-- Section -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">The Internet Never Forgets</h2>
+    <p>
+      Once data touches the internet, it spreads. Copies live on servers, backups,
+      caches, archives, and third-party platforms you’ve never heard of.
+      Deleting an account usually means
+      <span class="font-semibold">“hidden from public view”</span>,
+      not erased from existence.
+    </p>
+  </section>
+
+  <!-- Section -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">OSINT: Finding You Without Hacking</h2>
+    <p>
+      <span class="font-semibold">OSINT (Open Source Intelligence)</span>
+      is about collecting intelligence from public data.
+      No exploits. No passwords. Just correlation.
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2 text-gray-200">
+      <li>Reused usernames across platforms</li>
+      <li>Email addresses from data breaches</li>
+      <li>Phone numbers linked to social profiles</li>
+      <li>Reverse image search on profile photos</li>
+      <li>Metadata hidden inside images</li>
+      <li>Old posts, comments, and cached pages</li>
+    </ul>
+  </section>
+
+  <!-- OSINT Framework -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">The OSINT Framework</h2>
+    <p>This is not theory — there’s a full open-source map for it:</p>
+
+    <a 
+      href="https://osintframework.com/" 
+      target="_blank"
+      class="inline-block text-blue-400 font-semibold underline underline-offset-4 hover:text-blue-300"
+    >
+      https://osintframework.com
+    </a>
+
+    <p class="text-sm text-gray-400">
+      Hundreds of tools. Zero hacking. Maximum correlation.
+    </p>
+  </section>
+
+  <!-- AI Section -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">
+      AI Made OSINT Faster (and Scarier)
+    </h2>
+
+    <p>
+      Earlier, OSINT required patience. Now AI performs correlation at machine speed.
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Face matching across platforms</li>
+      <li>Writing-style fingerprinting</li>
+      <li>Location inference from background details</li>
+      <li>Linking fragmented identities into one profile</li>
+    </ul>
+
+    <p class="italic text-gray-400">
+      Efficiency achieved. Privacy… slightly sacrificed.
+    </p>
+  </section>
+
+  <!-- Personal Story -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">
+      How I Social-Engineered Myself
+    </h2>
+
+    <p>No hacker. No exploit. Just normal behavior.</p>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Signed up using my real name and email</li>
+      <li>Platform shared data with a “marketing partner”</li>
+      <li>That data landed in a third-party lead database</li>
+      <li>Sales teams from random companies started emailing me</li>
+    </ul>
+
+    <p>
+      I didn’t get hacked — I simply became a
+      <span class="font-semibold">data point</span>.
+    </p>
+
+    <p class="italic text-gray-400">
+      Congratulations to me. I successfully social-engineered myself into multiple CRMs.
+    </p>
+  </section>
+
+  <!-- HIBP -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">
+      Check If Your Email Is Already Compromised
+    </h2>
+
+    <p>
+      You can instantly check whether your email has appeared in known data breaches:
+    </p>
+
+    <a 
+      href="https://haveibeenpwned.com/"
+      target="_blank"
+      class="inline-block text-blue-400 font-semibold underline underline-offset-4 hover:text-blue-300"
+    >
+      https://haveibeenpwned.com
+    </a>
+
+    <ul class="list-disc pl-6 space-y-2 mt-2">
+      <li>Your email exists in breach datasets</li>
+      <li>It may circulate in OSINT & sales databases</li>
+      <li>Attackers don’t need to guess — they already know</li>
+    </ul>
+
+    <p class="italic text-gray-400">
+      It’s not paranoia. It’s inventory management — and you’re the inventory.
+    </p>
+  </section>
+
+  <!-- Reality Check -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">
+      “I’ll Just Delete Everything” — Reality Check
+    </h2>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Search engine caches</li>
+      <li>Web archives</li>
+      <li>Marketing & analytics databases</li>
+      <li>Old screenshots</li>
+      <li>Data brokers you never met</li>
+    </ul>
+
+    <p class="font-semibold text-gray-300">
+      No global delete button. No undo shortcut.
+    </p>
+  </section>
+
+  <!-- Actionables -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">
+      What You Can Actually Do
+    </h2>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Use alias emails</li>
+      <li>Stop reusing usernames</li>
+      <li>Lock down privacy settings</li>
+      <li>Remove unnecessary public profiles</li>
+      <li>Think before sharing — permanently</li>
+    </ul>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="space-y-4 border-t border-gray-700 pt-6">
+    <h2 class="text-2xl font-bold text-green-400">Conclusion</h2>
+
+    <p>
+      You can’t disappear. But you can stop making it easy.
+    </p>
+
+    <p class="text-gray-300">
+      In the age of OSINT and AI, the internet doesn’t forget — it correlates.
+      The smartest move is not invisibility, but control over what you feed the machine.
+    </p>
+  </section>
+
+</div>
+  `,
+  tags: [
+    "internet privacy",
+    "digital footprint",
+    "osint",
+    "osint framework",
+    "have i been pwned",
+    "email breaches",
+    "data brokers",
+    "social engineering",
+    "ai and privacy",
+    "cyber awareness",
+    "online tracking",
+    "information security"
+  ]
+},
+  {
   id: "data-centers-in-space",
   title: "Data Centers in Space: The Next Big Leap in Computing?",
   date: "August 24, 2025",
@@ -564,5 +779,4 @@ iPhone 17 Air: The Plus's slim "Air" variant (around 6.6 inches in screen and 6 
     `,
     tags : ["dijkstra-algorithm","algorithm","china","technology","new"],
   },
-  
 ];
