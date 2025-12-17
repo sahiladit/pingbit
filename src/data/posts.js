@@ -181,7 +181,9 @@ export const posts = [
   `,
   tags: [
     "hyperos 3",
+    "hyperos 3 xiaomi",
     "xiaomi hyperos",
+    "xiaomi",
     "xiaomi updates",
     "android os",
     "mobile operating systems",
