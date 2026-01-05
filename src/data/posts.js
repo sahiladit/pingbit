@@ -4,6 +4,177 @@ import './post.css';
 
 export const posts = [
   {
+  id: "ai-coding-1-hour-vs-1-year",
+  title: "When AI Rebuilt a Year of Engineering in One Hour",
+  date: "January 5, 2026",
+  description: "A Google engineer’s stunned reaction to an AI coding tool rebuilding a year-long project in just one hour highlights a turning point in how software is built, scaled, and valued.",
+  image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800",
+  content: `
+<div class="space-y-10 max-w-3xl mx-auto leading-relaxed">
+
+  <!-- Hero Image -->
+  <img 
+    src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800" 
+    alt="AI coding and software engineering" 
+    class="rounded-xl shadow-xl w-full"
+    loading="lazy"
+  />
+
+  <!-- Key Highlight -->
+  <div class="border-l-4 border-green-400 bg-green-400/10 p-4 rounded-lg">
+    <p class="text-lg font-semibold text-green-400">
+      “I’m not joking.” An AI system recreated in one hour what took a full engineering
+      team an entire year to build.
+    </p>
+  </div>
+
+  <!-- Section -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">The Moment That Stunned Engineers</h2>
+    <p>
+      During an internal showcase at <span class="font-semibold">:contentReference[oaicite:0]{index=0}</span>,
+      an engineer watched an AI-powered coding tool generate a complete working system
+      in about sixty minutes.
+    </p>
+
+    <p>
+      This wasn’t a demo toy or a half-baked prototype. The AI produced structured code,
+      core logic, integrations, and functional workflows that mirrored what a human team
+      had spent nearly a year designing, implementing, reviewing, and refining.
+    </p>
+  </section>
+
+  <!-- Why It Matters -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">Why This Is a Big Deal</h2>
+    <p>
+      Software engineering has always been limited by human throughput. Not intelligence —
+      throughput.
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Weeks spent aligning on architecture</li>
+      <li>Months lost to boilerplate and glue code</li>
+      <li>Slow feedback loops across large teams</li>
+      <li>Endless refactors and rewrites</li>
+    </ul>
+
+    <p>
+      AI doesn’t magically remove complexity. What it does remove is time — and time is
+      the most expensive resource in engineering.
+    </p>
+  </section>
+
+  <!-- What Changed -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">This Isn’t Just Faster Typing</h2>
+    <p>
+      Calling modern AI coding tools “autocomplete” is an understatement.
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>They reason across files, not just lines</li>
+      <li>They understand intent, not just syntax</li>
+      <li>They generate consistent architectural patterns</li>
+      <li>They refactor and adapt code in context</li>
+    </ul>
+
+    <p class="italic text-gray-400">
+      The leap isn’t speed. It’s compression of thought into execution.
+    </p>
+  </section>
+
+  <!-- Impact -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">What This Means for Developers</h2>
+    <p>
+      This moment doesn’t signal the death of software engineers.
+      It signals the death of low-leverage engineering.
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Less time writing repetitive scaffolding</li>
+      <li>More time validating logic and edge cases</li>
+      <li>Greater emphasis on system design and intent</li>
+      <li>Higher expectations from fewer engineers</li>
+    </ul>
+
+    <p class="text-gray-400 italic">
+      Engineers won’t be replaced — but engineers who don’t adapt might be.
+    </p>
+  </section>
+
+  <!-- The Human Factor -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">The New Role of Human Judgment</h2>
+    <p>
+      Even with AI generating massive amounts of code, humans remain critical.
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Defining the right problem to solve</li>
+      <li>Evaluating trade-offs and long-term risks</li>
+      <li>Ensuring security, privacy, and ethics</li>
+      <li>Owning responsibility for failures</li>
+    </ul>
+
+    <p>
+      AI can build fast. Humans still decide what should exist at all.
+    </p>
+  </section>
+
+  <!-- Bigger Picture -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">A Glimpse of the Future</h2>
+    <p>
+      What happened inside Google will not stay inside Google.
+    </p>
+
+    <p>
+      Startups will ship faster. Small teams will punch far above their weight.
+      Large organizations will be forced to rethink timelines, hiring, and
+      what “engineering effort” actually means.
+    </p>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="space-y-4 border-t border-gray-700 pt-6">
+    <h2 class="text-2xl font-bold text-green-400">Conclusion</h2>
+
+    <p>
+      An AI building a year’s worth of work in an hour isn’t a gimmick.
+      It’s a warning — and an opportunity.
+    </p>
+
+    <p class="text-gray-300">
+      The future of software isn’t about writing more code.
+      It’s about deciding better, faster, and with leverage.
+    </p>
+
+    <p class="italic text-gray-400">
+      The clock didn’t just speed up. It reset.
+    </p>
+  </section>
+
+</div>
+  `,
+  tags: [
+    "ai coding",
+    "software engineering",
+    "google ai",
+    "developer productivity",
+    "ai tools",
+    "future of programming",
+    "engineering trends",
+    "tech industry",
+    "automation",
+    "ai in software development",
+    "programming productivity",
+    "tech news",
+    "artificial intelligence"
+  ]
+},
+  {
   id: "hyperos-3-updates",
   title: "HyperOS 3: What’s New, What’s Improved, and What It Means for Xiaomi Users",
   date: "December 17, 2025",
