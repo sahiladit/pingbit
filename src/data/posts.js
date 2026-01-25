@@ -106,7 +106,7 @@ export const posts = [
     From this release, download the following three files:
   </p>
 
-  <ul class="list-disc pl-6 space-y-2 text-fuchsia-400">
+  <ul class="list-disc pl-6 space-y-2 text-yellow-300">
     <li><span class="font-semibold">bootloader.bin</span></li>
     <li><span class="font-semibold">esp32-wifi-penetration-tool.bin</span></li>
     <li><span class="font-semibold">partition-table.bin</span></li>
