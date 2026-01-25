@@ -69,19 +69,60 @@ export const posts = [
   </section>
 
   <!-- Setup Overview -->
-  <section class="space-y-4">
-    <h2 class="text-2xl font-bold text-green-400">Research Setup Overview</h2>
-    <p>
-      In an educational setup, the esp32 wroom 32 is connected to a computer, flashed with
-      a penetration-testing firmware, and configured to operate as a controlled
-      research access point.
-    </p>
+  <!-- Firmware Download -->
+<section class="space-y-4">
+  <h2 class="text-2xl font-bold text-green-400">
+    Download Required ESP32 Firmware Files
+  </h2>
 
-    <p>
-      Once powered, the ESP32 hosts a management interface that allows researchers
-      to observe and test Wi-Fi behavior in a safe environment.
-    </p>
-  </section>
+  <p>
+    Before connecting to the ESP32 management interface, the device must be flashed
+    with the appropriate firmware. For this project, the required files are provided
+    by the official open-source release of the ESP32 Wi-Fi Penetration Tool.
+  </p>
+  <p class="text-yellow-300">Download esptool from the documentation page:</p>
+    <a 
+    href="https://docs.espressif.com/projects/esptool/en/latest/esp32/installation.html"
+    target="_blank"
+    class="inline-block text-blue-400 font-semibold underline underline-offset-4 hover:text-blue-300"
+  >
+    https://docs.espressif.com/projects/esptool/en/latest/esp32/installation.html
+  </a>
+  
+
+  <p class="text-yellow-300">
+    Download the firmware from the following release page:
+  </p>
+  
+  <a 
+    href="https://github.com/risinek/esp32-wifi-penetration-tool/releases/tag/v1.0"
+    target="_blank"
+    class="inline-block text-blue-400 font-semibold underline underline-offset-4 hover:text-blue-300"
+  >
+    https://github.com/risinek/esp32-wifi-penetration-tool/releases/tag/v1.0
+  </a>
+
+  <p>
+    From this release, download the following three files:
+  </p>
+
+  <ul class="list-disc pl-6 space-y-2 text-fuchsia-400">
+    <li><span class="font-semibold">bootloader.bin</span></li>
+    <li><span class="font-semibold">esp32-wifi-penetration-tool.bin</span></li>
+    <li><span class="font-semibold">partition-table.bin</span></li>
+  </ul>
+
+  <p>
+    Copy this files into esptool folder.
+    These files are required to properly flash the ESP32 and enable its
+    web-based management interface.
+  </p>
+
+  <p class="italic text-gray-400">
+    Always verify that firmware is obtained from trusted and official sources.
+  </p>
+</section>
+
 
   <!-- Handshake -->
   <section class="space-y-4">
