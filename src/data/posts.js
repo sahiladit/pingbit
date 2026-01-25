@@ -11,7 +11,7 @@ export const posts = [
   {
   id: "esp32-wifi-security-education",
   title: "Exploring Wi-Fi Security with ESP32: Understanding Brute-Force Attacks (Educational)",
-  date: "January 10, 2026",
+  date: "January 25, 2026",
   description: "A security-focused and educational overview of how Wi-Fi brute-force attacks work using ESP32-based research tools, covering handshake capture, wordlists, attack theory, and future Wi-Fi attack vectors — strictly for learning and defense.",
   image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800",
   content: `
