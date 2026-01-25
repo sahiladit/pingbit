@@ -1,8 +1,387 @@
 import osintImage from "../assets/osint.png";
 import osi from "../assets/osi.png"
+import capture from "../assets/1st.png"
+import crunch from "../assets/2nd.png"
+import aircrack from "../assets/aircrack.png"
+import esp32 from "../assets/esp32.jpeg"
+import esp32webpage from "../assets/esp32webpage.png"
 import './post.css';
 
 export const posts = [
+  {
+  id: "esp32-wifi-security-education",
+  title: "Exploring Wi-Fi Security with ESP32: Understanding Brute-Force Attacks (Educational)",
+  date: "January 10, 2026",
+  description: "A security-focused and educational overview of how Wi-Fi brute-force attacks work using ESP32-based research tools, covering handshake capture, wordlists, attack theory, and future Wi-Fi attack vectors — strictly for learning and defense.",
+  image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800",
+  content: `
+<div class="space-y-10 max-w-3xl mx-auto leading-relaxed">
+
+  <!-- Hero Image -->
+  <img 
+    src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800" 
+    alt="Wireless security and penetration testing" 
+    class="rounded-xl shadow-xl w-full"
+    loading="lazy"
+  />
+
+  <!-- Ethical Disclaimer -->
+  <div class="border-l-4 border-red-400 bg-red-400/10 p-4 rounded-lg">
+    <p class="text-lg font-semibold text-red-400">
+      This article is strictly for educational purposes and authorized security testing.
+      Performing attacks on networks you do not own or have permission to test is illegal.
+    </p>
+  </div>
+
+  <!-- Introduction -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">Why Learn About Wi-Fi Attacks?</h2>
+    <p>
+      Wi-Fi attacks are not magic tricks — they are the result of weak passwords,
+      misconfigurations, and outdated security practices.
+      Understanding how these attacks work is essential for building stronger defenses.
+    </p>
+
+    <p>
+      The <span class="font-semibold">ESP32</span> has become a popular learning tool in
+      security research due to its low cost, flexibility, and native Wi-Fi capabilities.
+    </p>
+  </section>
+
+  <!-- ESP32 Role -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">What Role Does ESP32 Play?</h2>
+    <p>
+      ESP32 is a microcontroller with built-in Wi-Fi and Bluetooth radios.
+      In security labs, it is commonly used to:
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Scan and analyze nearby wireless networks</li>
+      <li>Monitor authentication traffic in controlled environments</li>
+      <li>Capture Wi-Fi handshakes for offline analysis</li>
+      <li>Demonstrate how attacks exploit weak security</li>
+    </ul>
+
+    <p class="italic text-gray-400">
+      ESP32 doesn’t “hack Wi-Fi” — it exposes weaknesses that already exist.
+    </p>
+  </section>
+
+  <!-- Setup Overview -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">Research Setup Overview</h2>
+    <p>
+      In an educational setup, the esp32 wroom 32 is connected to a computer, flashed with
+      a penetration-testing firmware, and configured to operate as a controlled
+      research access point.
+    </p>
+
+    <p>
+      Once powered, the ESP32 hosts a management interface that allows researchers
+      to observe and test Wi-Fi behavior in a safe environment.
+    </p>
+  </section>
+
+  <!-- Handshake -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">Understanding the Wi-Fi Handshake</h2>
+    <p>
+      When a device connects to a Wi-Fi network, it performs a
+      <span class="font-semibold">four-way handshake</span>.
+      This process proves that both sides know the password — without sending it directly.
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>The password is never transmitted in plain text</li>
+      <li>The handshake can be captured passively</li>
+      <li>Cracking attempts happen offline, not during capture</li>
+    </ul>
+
+    <p>
+      Capturing a complete handshake is the foundation for analyzing password strength.
+    </p>
+  </section>
+
+  <!-- Why Options -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">Why Specific Capture Options Are Selected</h2>
+    <p>
+      During handshake capture, specific options are used to ensure the data is usable.
+      These settings focus on:
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Filtering only authentication-related frames</li>
+      <li>Reducing background wireless noise</li>
+      <li>Ensuring all handshake steps are captured</li>
+      <li>Producing valid data for offline analysis</li>
+    </ul>
+
+    <p class="text-gray-400 italic">
+      Incomplete or noisy captures make password analysis impossible.
+    </p>
+  </section>
+  <!-- Practical Learning (Lab-Only) -->
+<section class="space-y-4">
+  <h2 class="text-2xl font-bold text-green-400">
+    Let’s Learn Practically (Authorized Lab Only)
+  </h2>
+
+  <p>
+    To truly understand how Wi-Fi brute-force attacks work, it’s important to
+    explore them in a <span class="font-semibold">controlled and authorized lab environment</span>.
+    The steps below explain the workflow conceptually, not for illegal use.
+  </p>
+
+  <!-- Step 0 -->
+  <h3 class="text-xl font-semibold text-green-300">
+    Step 0: Connect ESP32 and Access the Management Interface
+  </h3>
+   <div class="border border-dashed border-gray-600 rounded-lg p-4 text-center text-gray-400">
+
+  <img 
+    src=${esp32}
+    alt="connected esp32" 
+    class="rounded-xl shadow-xl w-full"
+    loading="lazy"
+  />  
+  esp32 connected 
+</div>
+
+  <p>
+    After flashing the ESP32 with the penetration-testing firmware and powering it on,
+    the device creates a Wi-Fi access point for management and control.
+  </p>
+
+  <p>
+    Once connected to this access point, open your browser and navigate to:
+  </p>
+
+  <pre class="bg-gray-900 rounded-lg p-4 text-sm text-gray-300">
+http://192.168.4.1
+  </pre>
+
+  <p>
+    This opens the ESP32’s web-based management panel, where you can configure
+    scan options, monitoring modes, and handshake capture behavior.
+  </p>
+
+  <!-- Image Placeholder -->
+  <div class="border border-dashed border-gray-600 rounded-lg p-4 text-center text-gray-400">
+  <img 
+    src=${esp32webpage}
+    alt="Wireless security and penetration testing" 
+    class="rounded-xl shadow-xl w-full"
+    loading="lazy"
+  />  
+  Image: ESP32 Wi-Fi Penetration Tool Web Interface
+  </div>
+
+
+  <p class="italic text-gray-400">
+    The options selected here determine what wireless frames are captured and why.
+  </p>
+  
+  <!-- Step 1 -->
+  <h3 class="text-xl font-semibold text-green-300">
+    Step 1: Generate a Wordlist
+  </h3>
+
+  <p>
+    Wordlist generation simulates how attackers exploit weak passwords.
+    Researchers use pattern-based generators to test how password complexity
+    affects security.
+  </p>
+
+  <pre class="bg-gray-900 rounded-lg p-4 text-sm text-gray-300 overflow-x-auto">
+crunch &lt;min-length&gt; &lt;max-length&gt; &lt;character-set&gt; &gt; &lt;wordlist-file-path&gt;
+  </pre>
+
+  <p class="text-gray-400 italic">
+    This demonstrates why short or predictable passwords are highly vulnerable.
+  </p>
+  <div class="border border-dashed border-gray-600 rounded-lg p-4 text-center text-gray-400">
+  <img 
+    src=${crunch}
+    alt="Crunch command" 
+    class="rounded-xl shadow-xl w-full"
+    loading="lazy"
+  />  
+    </div>
+  <!-- Step 2 -->
+  <h3 class="text-xl font-semibold text-green-300">
+    Step 2: Use a Captured Handshake
+  </h3>
+
+  <p>
+    A previously captured handshake file (from your own test network) is required.
+    No packets are sent to the router during analysis — everything happens offline.
+  </p>
+    <div class="border border-dashed border-gray-600 rounded-lg p-4 text-center text-gray-400">
+  <img 
+    src=${capture}
+    alt="captured file" 
+    class="rounded-xl shadow-xl w-full"
+    loading="lazy"
+  />  
+  Image: Captured Handshake file
+  </div>
+
+  <!-- Step 3 -->
+  <h3 class="text-xl font-semibold text-green-300">
+    Step 3: Offline Password Analysis
+  </h3>
+
+  <p>
+    Offline analysis tools compare each wordlist entry against the handshake
+    to check whether it produces a valid authentication result.
+  </p>
+
+  <pre class="bg-gray-900 rounded-lg p-4 text-sm text-gray-300 overflow-x-auto">
+aircrack-ng &lt;handshake-file.pcap&gt; -w &lt;wordlist-path&gt; -e &lt;network-name&gt; -b &lt;BSSID&gt;
+  </pre>
+  <div class="border border-dashed border-gray-600 rounded-lg p-4 text-center text-gray-400">
+
+  <img 
+    src=${aircrack}
+    alt="aircrack-ng command" 
+    class="rounded-xl shadow-xl w-full"
+    loading="lazy"
+  />  
+</div>
+  <p>
+    If a match is found, it confirms that the password was weak —
+    not that the Wi-Fi protocol itself was broken.
+  </p>
+
+  <p class="italic text-gray-400">
+    Strong passwords and WPA3 effectively neutralize this entire attack path.
+  </p>
+</section>
+
+
+  <!-- Brute Force -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">What Is a Brute-Force Attack?</h2>
+    <p>
+      A brute-force attack is a systematic process of testing passwords from a
+      <span class="font-semibold">wordlist</span> against a captured handshake.
+    </p>
+
+    <p>
+      Researchers often create custom wordlists using tools like pattern generators
+      and profile-based wordlist makers to simulate real-world password choices.
+    </p>
+
+    <p class="italic text-gray-400">
+      Strong passwords resist brute-force attacks. Weak ones fall quickly.
+    </p>
+  </section>
+
+  <!-- Analysis Tools -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">Offline Analysis & Password Testing</h2>
+    <p>
+      Once a handshake is captured, offline tools are used to test wordlists against it.
+      This process does not interact with the target network at all.
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>No packets are sent to the router</li>
+      <li>No users are affected during analysis</li>
+      <li>All testing happens locally</li>
+    </ul>
+  </section>
+
+  <!-- Temporary Disruption -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">Temporary Wi-Fi Disruption (Theory)</h2>
+    <p>
+      Some ESP32-based research tools can demonstrate how Wi-Fi networks can be
+      <span class="font-semibold">temporarily disrupted</span> for a few seconds.
+    </p>
+
+    <p>
+      This is usually done by exploiting how devices handle disconnection signals,
+      causing clients to briefly lose connectivity before automatically reconnecting.
+    </p>
+
+    <p class="italic text-gray-400">
+      This does not destroy the network — it highlights protocol-level weaknesses.
+    </p>
+  </section>
+
+  <!-- Future Attacks -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">Stay Tuned: Other Wi-Fi Attacks to Explore</h2>
+    <p>
+      Brute-force attacks are only one part of Wi-Fi security research.
+      Future topics include:
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Man-In-The-Middle (MITM) attacks</li>
+      <li>Evil Twin access points</li>
+      <li>Beacon flooding attacks</li>
+      <li>Rogue access point detection</li>
+      <li>Wi-Fi phishing and captive portal abuse</li>
+    </ul>
+
+    <p>
+      Each of these attacks exists because of protocol trust assumptions —
+      and each has real defensive countermeasures.
+    </p>
+  </section>
+
+  <!-- Defense -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">How to Protect Your Wi-Fi</h2>
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Use long, random passwords</li>
+      <li>Enable WPA3 where available</li>
+      <li>Disable WPS</li>
+      <li>Update router firmware regularly</li>
+      <li>Monitor connected devices</li>
+    </ul>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="space-y-4 border-t border-gray-700 pt-6">
+    <h2 class="text-2xl font-bold text-green-400">Conclusion</h2>
+
+    <p>
+      ESP32-based Wi-Fi research isn’t about breaking networks —
+      it’s about understanding why they break.
+    </p>
+
+    <p class="text-gray-300">
+      By studying handshake capture, brute-force theory, and wireless protocol behavior,
+      we gain the knowledge needed to build safer and more resilient networks.
+    </p>
+
+    <p class="italic text-gray-400">
+      Learn the attacks — so you can stop them.
+    </p>
+  </section>
+
+</div>
+  `,
+  tags: [
+    "wifi security",
+    "esp32",
+    "wireless penetration testing",
+    "wifi brute force",
+    "handshake capture",
+    "network security",
+    "ethical hacking",
+    "cybersecurity education",
+    "wireless attacks",
+    "mitm attacks",
+    "wifi defense",
+    "security research"
+  ]
+},
   {
   id: "ai-coding-1-hour-vs-1-year",
   title: "When AI Rebuilt a Year of Engineering in One Hour",

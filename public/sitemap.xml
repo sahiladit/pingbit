@@ -7,6 +7,14 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  
+
+  <url>
+    <loc>https://pingbit.blog/post/esp32-wifi-security-education</loc>
+    <lastmod>2025-08-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <url>
     <loc>https://pingbit.blog/post/all-about-osint</loc>
