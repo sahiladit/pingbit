@@ -1,7 +1,26 @@
 import { posts } from "../data/posts";
 import BlogCard from "../components/BlogCard";
+import { sendSubscription } from "../services/emailService";
+import { useState } from "react";
 
 export default function Home() {
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+  e.preventDefault();
+
+  const email = e.target.email.value;
+
+  sendSubscription(email)
+    .then(() => {
+      alert("Subscribed successfully 🚀");
+    })
+    .catch(() => {
+      alert("Something went wrong");
+    });
+
+  e.target.reset();
+};
   return (
     <div className="space-y-10">
       {/* HERO SECTION */}
@@ -13,6 +32,35 @@ export default function Home() {
           Deep dives into AI, Cybersecurity the tech that shapes tomorrow.
         </p>
       </section>
+
+      <section className="text-center py-12 border-t border-gray-800">
+  <h2 className="text-2xl font-bold text-green-400 mb-3">
+    Stay Updated
+  </h2>
+  <p className="text-gray-400 mb-6">
+    Get notified when a new blog drops.
+  </p>
+    <p className="text-green-400 mt-3">{message}</p>
+  <form 
+  onSubmit={handleSubmit}
+  className="flex flex-col sm:flex-row justify-center gap-3"
+>
+    <input
+      type="email"
+      name="email"
+      placeholder="Enter your email"
+      className="px-4 py-2 rounded-md bg-black border border-gray-700 text-white w-72 focus:outline-none focus:border-green-400"
+      required
+    />
+    <button
+      type="submit"
+      className="px-6 py-2 bg-green-400 text-black rounded-md font-semibold hover:bg-green-300 transition"
+    >
+      Subscribe
+    </button>
+  </form>
+</section>
+      
 
       {/* CATEGORIES */}
       <section className="flex flex-wrap justify-center gap-3">
@@ -32,6 +80,8 @@ export default function Home() {
           <BlogCard key={post.id} post={post} />
         ))}
       </section>
+
+      
     </div>
   );
 }
