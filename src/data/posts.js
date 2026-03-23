@@ -9,6 +9,194 @@ import './post.css';
 
 export const posts = [
   {
+  id: "xmlrpc-one-click-away",
+  title: "One Click Away from Taking Down a Website",
+  date: "March 23, 2026",
+  description: "A deep dive into how a simple interaction with a legacy WordPress endpoint revealed how fragile real-world systems can be — and how close one click can come to causing major disruption.",
+  image: "https://academy.hackthebox.com/storage/paths/405/logo.png",
+  content: `
+<div class="space-y-10 max-w-3xl mx-auto leading-relaxed">
+
+  <!-- Hero Image -->
+  <img 
+    src="https://academy.hackthebox.com/storage/paths/405/logo.png" 
+    alt="Cybersecurity and system vulnerability" 
+    class="rounded-xl shadow-xl w-full"
+    loading="lazy"
+  />
+
+  <!-- Key Highlight -->
+  <div class="border-l-4 border-red-400 bg-red-400/10 p-4 rounded-lg">
+    <p class="text-lg font-semibold text-red-400">
+      “One click.” That’s all it would have taken to disrupt core functionality of a live system.
+    </p>
+  </div>
+
+  <!-- Section -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-red-400">The Moment of Realization</h2>
+    <p>
+      While exploring how WordPress handles remote communication, I came across
+      an interesting endpoint — one that’s often overlooked but widely enabled.
+    </p>
+
+    <p>
+      At first glance, everything seemed normal. But as I dug deeper into how
+      requests were processed, it became clear that a specific interaction could
+      interfere with how the system handled critical operations.
+    </p>
+
+    <p class="italic text-gray-400">
+      Not by breaking authentication. Not by exploiting a bug. Just by using what was already exposed.
+    </p>
+  </section>
+
+  <!-- What Is XML-RPC -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-red-400">The Hidden Surface: XML-RPC</h2>
+    <p>
+      XML-RPC is a legacy feature in WordPress that allows remote systems to
+      interact with a site using structured requests.
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Publish and edit posts remotely</li>
+      <li>Interact with content via external tools</li>
+      <li>Enable integrations across platforms</li>
+    </ul>
+
+    <p>
+      Useful? Yes.  
+      Necessary today? Rarely.  
+      Secure by default? Not always.
+    </p>
+  </section>
+
+  <!-- Why It Matters -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-red-400">Why This Is Dangerous</h2>
+    <p>
+      The issue isn’t just that XML-RPC exists — it’s that it exposes powerful
+      functionality through a single endpoint.
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Multiple actions can be triggered in a single request</li>
+      <li>It can bypass typical interaction patterns</li>
+      <li>It expands the attack surface significantly</li>
+      <li>It is often left enabled without strict controls</li>
+    </ul>
+
+    <p>
+      In certain configurations, this can lead to scenarios where core features
+      of a website become unstable or unresponsive.
+    </p>
+  </section>
+
+  <!-- The Near Miss -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-red-400">One Click Away</h2>
+    <p>
+      In this case, a particular request flow revealed how easily things could
+      escalate. A single action had the potential to interfere with normal
+      functionality — not through brute force, but through misuse of exposed capability.
+    </p>
+
+    <p>
+      It wasn’t executed.
+    </p>
+
+    <p class="text-gray-400 italic">
+      Because sometimes, the most important skill in security is knowing when to stop.
+    </p>
+  </section>
+
+  <!-- Lessons -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-red-400">What This Teaches</h2>
+    <p>
+      Real-world systems aren’t always broken because of complex bugs.
+      Sometimes, they’re fragile because of unnecessary exposure.
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Legacy features can become modern risks</li>
+      <li>Default configurations are rarely secure enough</li>
+      <li>Public endpoints should be minimized</li>
+      <li>Powerful features require strict control</li>
+    </ul>
+  </section>
+
+  <!-- Prevention -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-red-400">How to Secure Against This</h2>
+    <p>
+      The fix isn’t complicated — but it requires awareness.
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Disable XML-RPC if not required</li>
+      <li>Restrict access to trusted sources only</li>
+      <li>Implement rate limiting and monitoring</li>
+      <li>Use modern APIs instead of legacy endpoints</li>
+    </ul>
+
+    <p class="text-gray-400 italic">
+      Security isn’t about adding more — it’s about exposing less.
+    </p>
+  </section>
+
+  <!-- Bigger Picture -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-red-400">The Bigger Picture</h2>
+    <p>
+      This wasn’t about breaking a system. It was about understanding how easily
+      systems can be pushed beyond their intended use.
+    </p>
+
+    <p>
+      The most dangerous vulnerabilities aren’t always hidden deep in code.
+      Sometimes, they’re sitting in plain sight — waiting for the wrong click.
+    </p>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="space-y-4 border-t border-gray-700 pt-6">
+    <h2 class="text-2xl font-bold text-red-400">Conclusion</h2>
+
+    <p>
+      Being one click away from disruption changes how you look at systems.
+    </p>
+
+    <p class="text-gray-300">
+      It shifts your mindset from building features to questioning exposure,
+      from writing code to understanding impact.
+    </p>
+
+    <p class="italic text-gray-400">
+      Sometimes, the line between stable and broken is thinner than we think.
+    </p>
+  </section>
+
+</div>
+  `,
+  tags: [
+    "cybersecurity",
+    "wordpress",
+    "xmlrpc",
+    "web security",
+    "ethical hacking",
+    "security awareness",
+    "backend security",
+    "system design",
+    "security risks",
+    "web development",
+    "infosec",
+    "tech insights",
+    "security engineering"
+  ]
+},
+  {
   id: "esp32-wifi-security-education",
   title: "Exploring Wi-Fi Security with ESP32: Understanding Brute-Force Attacks (Educational)",
   date: "January 25, 2026",
