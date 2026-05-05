@@ -6,8 +6,191 @@ import aircrack from "../assets/aircrack.png"
 import esp32 from "../assets/esp32.jpeg"
 import esp32webpage from "../assets/esp32webpage.png"
 import './post.css';
+import colab_img from "../assets/collab_code_img.png"
+import colab_vdo from "../assets/collab_code.mp4"
 
 export const posts = [
+  {
+  id: "real-time-collaborative-code-editor",
+  title: "Building a Real-Time Collaborative Code Editor with Socket.IO and React",
+  date: "May 6, 2026",
+  description: "A deep dive into building a real-time collaborative coding platform using React, Node.js, Socket.IO, and Monaco Editor, with live synchronization and authenticated user presence.",
+  image: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f",
+  content: `
+<div class="space-y-10 max-w-3xl mx-auto leading-relaxed">
+
+  <!-- Hero Image -->
+  <img 
+    src="${colab_img}"
+    alt="Collaborative coding environment" 
+    class="rounded-xl shadow-xl w-full"
+    loading="lazy"
+  />
+
+  <!-- Key Highlight -->
+  <div class="border-l-4 border-green-400 bg-green-400/10 p-4 rounded-lg">
+    <p class="text-lg font-semibold text-green-400">
+      “Real-time collaboration transforms coding from a solo task into a shared experience.”
+    </p>
+  </div>
+
+  <!-- Intro -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">Overview</h2>
+
+    <p>
+      This project is a real-time collaborative code editor where multiple users can join a room and write code together with live synchronization.
+    </p>
+
+    <p>
+      It replicates the core idea behind collaborative tools like shared documents, but applied to coding environments with low-latency updates and shared state.
+    </p>
+  </section>
+
+  <!-- Demo -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">Demo</h2>
+
+    <video 
+      controls 
+      class="rounded-xl shadow-xl w-full"
+    >
+      <source src="${colab_vdo}" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <p class="text-gray-400 text-sm">
+      Demo showing multiple users editing code in real time with synchronized updates.
+    </p>
+  </section>
+
+  <!-- Features -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">Core Features</h2>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Real-time code synchronization across users</li>
+      <li>Room-based collaboration system</li>
+      <li>Live user presence with avatars</li>
+      <li>State sync for late joiners</li>
+      <li>VS Code-like editor using Monaco</li>
+    </ul>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">Tech Stack</h2>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Frontend: React, Tailwind CSS</li>
+      <li>Backend: Node.js, Express</li>
+      <li>Real-time communication: Socket.IO</li>
+      <li>Editor: Monaco Editor</li>
+      <li>Authentication: Clerk</li>
+    </ul>
+  </section>
+
+  <!-- How It Works -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">How It Works</h2>
+
+    <p>
+      The system is built around WebSocket-based communication using Socket.IO.
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Each user connects to the server via a socket</li>
+      <li>Users join rooms to collaborate in isolated sessions</li>
+      <li>Code changes are emitted and broadcast to all users in the room</li>
+      <li>The server maintains the latest code state for synchronization</li>
+      <li>New users receive existing code upon joining</li>
+    </ul>
+
+    <p class="italic text-gray-400">
+      The challenge lies in keeping all clients in sync without causing update loops.
+    </p>
+  </section>
+
+  <!-- How I Built -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">How I Built It</h2>
+
+    <p>
+      The project started with a basic client-server architecture and gradually evolved into a real-time system.
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Set up Express server and integrated Socket.IO</li>
+      <li>Created room-based architecture for collaboration</li>
+      <li>Integrated Monaco Editor for a professional coding experience</li>
+      <li>Handled real-time synchronization and state updates</li>
+      <li>Added authentication using Clerk for user identity</li>
+      <li>Implemented user presence with avatars</li>
+    </ul>
+  </section>
+
+  <!-- Challenges -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">Challenges Faced</h2>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Handling real-time sync without overwriting data</li>
+      <li>Managing shared state across multiple users</li>
+      <li>Ensuring late joiners receive correct state</li>
+      <li>Preventing infinite update loops</li>
+      <li>Integrating authentication with live sockets</li>
+    </ul>
+  </section>
+
+  <!-- Future Improvements -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-bold text-green-400">Future Improvements</h2>
+
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Judge0 integration for code execution</li>
+      <li>Live cursor tracking and user indicators</li>
+      <li>Multi-file support with tabs</li>
+      <li>Persistent storage using database</li>
+      <li>Conflict-free editing (CRDT/OT)</li>
+    </ul>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="space-y-4 border-t border-gray-700 pt-6">
+    <h2 class="text-2xl font-bold text-green-400">Conclusion</h2>
+
+    <p>
+      This project goes beyond traditional web applications by focusing on real-time collaboration and distributed state management.
+    </p>
+
+    <p class="text-gray-300">
+      It demonstrates how modern web technologies can be used to build interactive, multi-user systems.
+    </p>
+
+    <p class="italic text-gray-400">
+      Real-time systems are not just about speed — they are about consistency, synchronization, and user experience.
+    </p>
+  </section>
+
+</div>
+  `,
+  tags: [
+    "react",
+    "nodejs",
+    "socketio",
+    "monaco editor",
+    "real time systems",
+    "web development",
+    "full stack",
+    "collaborative tools",
+    "javascript",
+    "websockets",
+    "clerk",
+    "frontend",
+    "backend",
+    "software engineering"
+  ]
+},
   {
   id: "openai-passwordless-login",
   title: "OpenAI Introduces Passwordless Login: The Beginning of the Post-Password Era",
